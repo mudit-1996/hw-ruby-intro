@@ -15,6 +15,7 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  arr.combination(2).any? { |x, y| x + y == n }
 end
 
 # Part 2
