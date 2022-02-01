@@ -34,6 +34,8 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  regex = /^(0+|[01]+00)\z/
+  regex.match(s)
 end
 
 # Part 3
