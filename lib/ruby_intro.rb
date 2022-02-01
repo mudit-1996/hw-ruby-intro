@@ -4,11 +4,13 @@
 
 def sum arr
   # YOUR CODE HERE
-  arr.reduce(0) {|sum, element| sum + element}
+  arr.reduce(0) { |sum, element| sum + element }
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  arr.sort!
+  sum(arr.last(2))
 end
 
 def sum_to_n? arr, n
